@@ -152,6 +152,17 @@
 	padding: 2px;
 	margin: 2px;
 }
+th, td {
+  vertical-align: top;	
+  border: 5px;
+  padding:  7px;
+}
+tr{
+	padding:  20px;
+}
+td:first-child {
+  font-weight: bold;
+}
 </style>
 
 
@@ -277,14 +288,15 @@
 								  </div>
 
 								<div class="skill-mf">
-									<p class="title-s">Skills</p>
+									<!-- <p class="title-s">SKILLS</p> -->
+									<h2 style="padding-top: 10px;">SKILLS</h2>
 									<span>SQL</span> <span class="pull-right">95%</span>
 									<div class="progress">
 										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
 											aria-valuemax="100"></div>
 									</div>
 									
-									<span>PYTHON</span> <span class="pull-right">85%</span>
+									<span>Python</span> <span class="pull-right">85%</span>
 									<div class="progress">
 										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
 											aria-valuemax="100"></div>
@@ -322,19 +334,52 @@
 								<p>With over 2 years of comprehensive experience in the field of Information Technology, accompanied by a Masters degree in Information Systems. 
 									Proficient in data analysis, statistical analysis, hypothesis testing, &amp; machine learning. 
 								</p>
-								<ul class="about-info mt-4 px-md-0 px-2">
+								<!-- <ul class="about-info mt-4 px-md-0 px-2">
 									<li class="d-flex"><b><span>Profile: </span> </b><span> &nbsp;Data Science &amp; Analytics</span></li>
-									<!-- <li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce, BFSI &amp; Digital Marketing</span></li> -->
-									<li class="d-flex"><b><span>Education: </span></b> <span> &nbsp;Masters in Information Systems</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce, BFSI &amp; Digital Marketing</span></li>
+									<li class="d-flex"><b><span>Education: </span></b> <span> &nbsp;Masters in Information Systems</span></li> 
 									<li class="d-flex"><b><span>Python: </span></b> &nbsp;Scikit-learn, Numpy, Pandas, Seaborn, Matplotlib, NLTK, PyTorch, TensorFlow</li>
-									<li class="d-flex"><b><span>Databases: </span></b> <span> &nbsp;MySQL, PLSQL, PostgreSQL, MongoDB, AWS DynamoDB</span></li>
-									<li class="d-flex"><b><span>BI Tools: </span> </b><span> &nbsp;Tableau, Microsoft Power BI, Looker</span></li>
+									<li class="d-flex"><b><span>Databases: </span></b> <span> &nbsp;MySQL, PLSQL, PostgreSQL, MongoDB</span></li>
+									<li class="d-flex"><b><span>Big Data Tools: </span></b> <span> &nbsp;Apache Spark, Spark SQL,Kafka, Hadoop</span></li>
+									<li class="d-flex"><b><span>Cloud Technologies: </span> </b><span> &nbsp;VPN, IAM, AWS [EC2, S3, DynamoDB, RDS, Glue, Athena, Redshift, Kinesis]</span></li>
+									<li class="d-flex"><b><span>BI Tools: </span> </b><span> &nbsp;Tableau, Microsoft Power BI, Looker, Excel</span></li>
 									<li class="d-flex"><b><span>Web Tools: </span> </b><span> &nbsp;HTML, CSS, JavaScript, Flask, Django, React</span></li>
 									<li class="d-flex"><b><span>Language: </span> </b><span> &nbsp;English, Hindi</span></li>
-									<!-- <li class="d-flex"><span>Other Skills:</span> <span></span></li> -->
-									<!-- <li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography, Teaching</span></li> -->
-									
-								</ul>
+								</ul> -->
+								<table style="width:100%">
+									<colgroup>
+										<col span="1" style="width: 30%">
+										<col style="width: 70%">
+									  </colgroup>
+									<tr>
+									  <td>Python</td>
+									  <td>Scikit-learn, Numpy, Pandas, Seaborn, Matplotlib, NLTK, PyTorch, TensorFlow</td>
+									</tr>
+									<tr>
+										<td>Databases:</td>
+										<td>MySQL, PLSQL, PostgreSQL, MongoDB</td>
+									  </tr>
+									  <tr>
+										<td>Big Data Tools:</td>
+										<td>Apache Spark, Spark SQL,Kafka, Hadoop</td>
+									  </tr>
+									  <tr>
+										<td>Cloud Technologies:</td>
+										<td>VPN, IAM, AWS [EC2, S3, DynamoDB, RDS, Glue, Athena, Redshift, Kinesis]</td>
+									  </tr>
+									  <tr>
+										<td>BI Tools:</td>
+										<td>Tableau, Microsoft Power BI, Looker, Excel</td>
+									  </tr>
+									  <tr>
+										<td>Web Tools:</td>
+										<td>HTML, CSS, JavaScript, Flask, Django, React</td>
+									  </tr>
+									  <tr>
+										<td>Language:</td>
+										<td>English, Hindi, Gujarati</td>
+									  </tr>
+								  </table>
 							</div>
 						</div>
 
@@ -342,7 +387,7 @@
 						<div class="counter-wrap ftco-animate d-flex mt-md-3">
 							<div class="text">
 								<p class="mb-4">
-									<span class="number">10</span> <span>+</span>
+									<span class="number" style="font-weight: bold; color: #ffbd39;">10</span> <span style="color: #ccc;">+</span>
 									<span>&nbsp; Projects completed</span>
 								</p>
 								<a href="https://www.linkedin.com/in/darshilshah622/" target="_blank" class="btn btn-primary py-3 px-3 space-right space-left space-top space-bottom">LinkedIn</a>
@@ -388,7 +433,7 @@
 						</div>	
 						<span class="position">Systems Engineer</span>
 						<!-- <p class="mt-4">Merkle, a leading CXM and media company with over 10K+ professionals globally. It's a part of Dentsu International.  -->
-							<ul>
+							<!-- <ul>
 								<li>Enhanced data retrieval efficiency by optimizing SQL queries to extract over 40K rows of human resource (HR)
 									data from the Oracle cloud database using Human Capital Management(HCM) Extracts</li>
 								<li>Developed templates and interactive dashboards in Oracle Business Intelligence Publisher, facilitating seamless
@@ -397,6 +442,13 @@
 									source to the Oracle Cloud, eliminating manual data entry mistakes</li>
 								<li>Successfully managed and led a team of 5 people for quarterly cloud upgrade activities through effective team
 									collaboration, thereby reducing system downtime</li>
+							</ul> -->
+							<ul>
+								<li>Optimized SQL queries, achieving a 30% increase in data retrieval efficiency for human resource (HR) management data extraction from the Oracle cloud database</li>
+								<li>Spearheaded development of performance reports using BI Publisher, facilitating recruitment processes</li>
+								<li>Constructed ETL data pipelines using Data Loader to collect and store over 100K rows of data on Oracle database</li>
+								<li>Led a team of five during system upgrade activities with effective collaboration, ensuring seamless system functionality</li>
+								<li>Handled more than 25 Jira tickets regarding system enhancements and documented the implementations in Confluence</li>
 							</ul>
 						</p>
 					</div>
@@ -447,7 +499,7 @@
 								<p class="mt-4" style="text-align: left;">Boston, MA, USA</p>
 							</div>
 							<div class="flex-item-right">
-								<p class="mt-4" style="text-align: right;">CGPA: 3.4 / 4.0</p>
+								<p class="mt-4" style="text-align: right;">CGPA: 3.7 / 4.0</p>
 							</div>
 						</div>
 	
@@ -459,7 +511,7 @@
     				<div class="resume-wrap ftco-animate">
 						<div class="flex-container">
 							<div class="flex-item-left">
-								<h3>Mumbai University</h3>
+								<h3>University of Mumbai</h3>
 							</div>
 							<div class="flex-item-right">
 								<span class="date">Aug 2017 - May 2021 <br></span>
